@@ -1,5 +1,7 @@
-fif (!dates || dates.length === 0) return null;
+function minDate(dates) {
+  if (!dates || dates.length === 0) return null;
 
+  
   let min = dates[0];
 
   for (let i = 1; i < dates.length; i++) {
@@ -10,6 +12,8 @@ fif (!dates || dates.length === 0) return null;
 
   return min;
 }
+
+
 
 var dates = [
   "2023/03/01",
